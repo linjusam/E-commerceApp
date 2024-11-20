@@ -1,0 +1,110 @@
+/* cart.css */
+
+.cart-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Centers the container vertically */
+}
+
+.product-detail {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 700px;
+  justify-content: space-between; /* Ensures the space is evenly distributed */
+}
+
+.product-image {
+  width: 100px;
+  height: 120px;
+  margin-right: 20px;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.product-info {
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.delete-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
+
+.product-detail h1 {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+.product-detail p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Center the entire cart container */
+.cart-container {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .product-detail {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-image {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .delete-button {
+    margin-top: 15px;
+  }
+
+  .product-info {
+    margin-right: 0;
+  }
+}
+.empty-cart-message {
+  text-align: center;
+  padding: 50px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.empty-cart-message h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.empty-cart-message p {
+  font-size: 16px;
+  color: #666;
+}

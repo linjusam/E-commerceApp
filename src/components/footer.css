@@ -1,0 +1,102 @@
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(38, 37, 37); /* Black background */
+    color: white; /* White text color */
+    box-sizing: border-box;
+    position: relative; /* Ensure positioning */
+    z-index: 10; /* Stack on top */
+    font-size: 14px; /* Standard body font size */
+}
+
+.footer div {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+    background-color: transparent; /* Transparent background */
+}
+
+.footer h4, .footer p {
+    margin: 0 0 10px 0;
+    background-color: transparent; /* Ensure no background */
+    color: white; /* White text color */
+    
+}
+
+.footer::before, .footer::after {
+    content: "";
+    display: none; /* Ensure no overlay */
+    background-color: transparent;
+}
+.footer1
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(38, 37, 37);
+    color: white; /* White text color */
+    box-sizing: border-box;
+    position: relative; /* Ensure positioning */
+    z-index: 10; /* Stack on top */
+    text-align: center;
+    font-size: 14px;
+}
+
+   
+.footer1 div {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+    background-color: transparent; /* Transparent background */
+}
+
+.footer1 h5, .footer p {
+    margin: 0 0 10px 0;
+    background-color: transparent; /* Ensure no background */
+    color: white; /* White text color */
+    
+}
+
+.footer1::before, .footer::after {
+    content: "";
+    display: none; /* Ensure no overlay */
+    background-color: transparent;
+} /* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer div, .footer1 div {
+        flex: 0 0 100%; /* Take full width on smaller screens */
+        text-align: center; /* Center text for better visibility */
+        margin: 10px 0; /* Margin adjustment for spacing */
+    }
+
+    .footer h4, .footer1 h5 {
+        font-size: 18px; /* Slightly larger headings for readability */
+    }
+
+    .footer p, .footer1 p {
+        font-size: 16px; /* Increase font size for better readability on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer, .footer1 {
+        flex-direction: column; /* Stack the content vertically */
+        align-items: center; /* Center content */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .footer div, .footer1 div {
+        margin: 5px 0; /* Adjust margin for compact spacing */
+    }
+
+    .footer h4, .footer1 h5 {
+        font-size: 20px; /* Further increase heading size */
+    }
+
+    .footer p, .footer1 p {
+        font-size: 18px; /* Further increase body font size */
+    }
+}

@@ -1,0 +1,49 @@
+/* navbar.css */
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center the links horizontally */
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.nav-item {
+  margin: 0 20px; /* Maximum gap between each link */
+}
+
+@media (max-width: 992px) {
+  .nav-item {
+    margin: 0 15px; /* Slightly reduced gap on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-item {
+    margin: 0 10px; /* Further reduced gap on small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-item {
+    margin: 10px 0; /* Links stacked vertically with space between them */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Stack links vertically on extra small screens */
+    align-items: center;    /* Center the links vertically */
+  }
+}
+
+.logo {
+  height: 50px; /* Adjusted height to fit your design */
+}
+
+.cart-icon {
+  height: 24px; 
+  margin-right: 5px; /* Space between cart icon and text */
+}
+
+.cart-count {
+  color: black;  /* Black color for cart count */
+  margin-left: 5px; /* Space between cart count and text */
+}

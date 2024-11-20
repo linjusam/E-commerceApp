@@ -1,0 +1,19 @@
+.carousel-indicators {
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove border if there is any */
+    box-shadow: none; /* Remove any shadow if there is any */
+
+}
+
+.carousel-indicators .active {
+    background-color: #d42222; /* Change the active indicator color if needed */
+}
+.banner p
+{
+font-weight: bold;
+color:white;
+}
+.banner h3{
+    font-weight: bolder;
+    color: white;
+}

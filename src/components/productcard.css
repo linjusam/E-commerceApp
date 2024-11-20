@@ -1,0 +1,74 @@
+/* ProductCard.css */
+
+/* General card styles */
+.card.product {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%; /* Ensure the card takes up full height */
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+    
+  }
+  
+  .card.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+
+    max-width: 40%;
+    height: 50%;
+    margin-right: 20px;
+    object-fit: contain;
+  }
+  
+  
+  .card-body {
+    flex-grow: 1; /* Allows the body to expand and fill the available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space between the title, price, and button */
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.00rem;
+   
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    align-self: center;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 576px) {
+    .card.product {
+      margin-bottom: 1rem;
+    }
+  }
+  
